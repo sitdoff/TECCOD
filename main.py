@@ -26,7 +26,9 @@ def get_only_unique(numbers: list[int]) -> list[int]:
 
 def get_primes(min_number: int, max_number: int) -> list[int]:
     """
-    Обычное решето Эратосфена с дополнением
+    Обычное решето Эратосфена с дополнением.
+
+    Да, считаем много лишнего, но все равно быстро.
     """
     primes = [True] * (max_number + 1)
     primes[0], primes[1] = False, False
