@@ -39,9 +39,6 @@ def get_primes(min_number: int, max_number: int) -> list[int]:
     return [i for i in range(max_number + 1) if primes[i]]
 
 
-print("Primes: ", get_primes(5, 1000))
-
-
 # ------------------------------------------------------------------------------------------------------
 # 3. Создать класс Point, который представляет собой точку в двумерном пространстве.
 # Класс должен иметь методы для инициализации координат точки, вычисления расстояния до другой точки,
@@ -124,3 +121,10 @@ list_of_strings = ["строк", "лист", "Это"]
 
 print(sorted(list_of_strings, key=lambda x: len(x)))
 print(sorted(list_of_strings, key=lambda x: len(x), reverse=True))
+
+# Или можно через метод списка, если сохранение изначального порядка элементов не имеет значения.
+list_of_strings.sort(key=lambda x: len(x))
+print(list_of_strings)
+
+list_of_strings.sort(key=lambda x: len(x), reverse=True)
+print(list_of_strings)
